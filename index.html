@@ -1,13 +1,44 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-<script>
-  function masuk()
-  {
 
-    var login = prompt('namaku?');
+  <title></title>
 
-      if (login == "nurul") {
+  <style type="text/css">
+.button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1;
+background-color: pink;}
+}
+
+  </style>
+
+  <script>
+
+    function login()
+
+    {
+
+      var nama = prompt("Masukin namaku dong");
+
+
+
+      if (nama == "nurul") {
 
         alert("Login berhasil")
 
@@ -15,7 +46,7 @@
 
       }
 
-      else if (login == "Nurul") {
+      else if (nama == "Nurul") {
 
         window.location.href="halaman.html";
 
@@ -23,14 +54,22 @@
 
       else{
 
-        alert("Login gagal, Harap hubungi admin")
+        alert("Anda kurang beruntung. Coba lagi?")
 
       }
-  }
-   
-}
-</script>
+
+    }
+
+  </script>
+
 </head>
-<body>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<center><button type="" onClick="login()" class="button">Klik untuk masuk</button></center>
+
+<a href="">
+
 </body>
+
 </html>
